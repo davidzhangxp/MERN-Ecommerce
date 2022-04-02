@@ -1,15 +1,13 @@
 import express from "express";
 import { data } from "./data.js";
+import productRouter from "./routers/productRouter.js";
 
 const app = express();
 
 app.get("/", (req, res) => {
   res.send("server is ready");
 });
-
-app.get("/api/products", (req, res) => {
-  res.send(data.products);
-});
+app.use("/api/products", productRouter);
 
 const port = process.env.PORT || 8800;
 

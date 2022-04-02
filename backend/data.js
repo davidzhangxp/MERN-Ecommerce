@@ -1,6 +1,7 @@
 export const data = {
   products: [
     {
+      _id: "1",
       slug: "1",
       name: "Full zip running shoes",
       category: "shoe",
@@ -13,6 +14,7 @@ export const data = {
       description: "Nike shoes iii   jsjklaj",
     },
     {
+      _id: "2",
       slug: "2",
       name: "running clothes",
       category: "shirt",
@@ -25,6 +27,7 @@ export const data = {
       description: "runiiing shoes is  dajljo",
     },
     {
+      _id: "3",
       slug: "3",
       name: "running clothes",
       category: "shirt",
@@ -34,6 +37,32 @@ export const data = {
       rating: 4.5,
       numReviews: 10,
       countInStock: 6,
+      description: "runiiing shoes is  dajljo",
+    },
+    {
+      _id: "4",
+      slug: "4",
+      name: "running clothes",
+      category: "shirt",
+      image: "../images/p3.jpeg",
+      price: 120,
+      brand: "Nike",
+      rating: 4.5,
+      numReviews: 10,
+      countInStock: 6,
+      description: "runiiing shoes is  dajljo",
+    },
+    {
+      _id: "5",
+      slug: "5",
+      name: "running clothes",
+      category: "shirt",
+      image: "../images/p1.jpeg",
+      price: 120,
+      brand: "Nike",
+      rating: 4.5,
+      numReviews: 10,
+      countInStock: 0,
       description: "runiiing shoes is  dajljo",
     },
   ],

@@ -3,6 +3,7 @@ import { Product } from "../components/Product";
 import axios from "axios";
 import { LoadingBox } from "../components/LoadingBox";
 import { MessageBox } from "../components/MessageBox";
+import { Col, Row } from "react-bootstrap";
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -43,13 +44,15 @@ export const HomeScreen = () => {
       {loading ? (
         <LoadingBox></LoadingBox>
       ) : error ? (
-        <MessageBox variant="error">{error}</MessageBox>
+        <MessageBox variant="danger">{error}</MessageBox>
       ) : (
-        <div className="row center">
+        <Row>
           {products.map((product) => (
-            <Product key={product.slug} product={product} />
+            <Col sm={6} md={4} lg={3} className="mb-3" key={product.slug}>
+              <Product product={product} />
+            </Col>
           ))}
-        </div>
+        </Row>
       )}
     </div>
   );
